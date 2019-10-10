@@ -109,7 +109,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     // Автоматическое листание слайдов пока они видимы
     function autoslideChange() {
-        let timerId = setTimeout(autoslideChange, 5000);
+        let timerId = setTimeout(autoslideChange,7000);
         changeSlide(1);
         if ($(window).scrollTop() > $("div.slider-block").height()) {
             clearTimeout(timerId);

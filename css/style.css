@@ -1,10 +1,10 @@
 .fade {
     -webkit-animation-name: fade;
             animation-name: fade;
-    -webkit-animation-duration: 2.5s;
-            animation-duration: 2.5s;
+    -webkit-animation-duration: 3.5s;
+            animation-duration: 3.5s;
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 2.5s;
+    -webkit-animation-duration: 3.5s;
   }
   @-webkit-keyframes fade {
     from {
@@ -69,42 +69,13 @@
    text-align: center;
   }
   
-  /* .wrap .slider-item .slider-block p{
-    font-size: 1.133em;
-        line-height: 1.85em;
-        max-width: 46em;
-        letter-spacing: -0.35px;
-        margin: 0 auto;
-  } */
-  
   .wrap .slider-item .slider-block img{
 width: 100%;
 height: auto;
-opacity: 0.6;
+/* opacity: 0.6; */
   }
   
-  /* .wrap .slider-item .slider-block a:hover{
-    color: var(--super-dark-color);
-    transition: 0.5s;
-  } */
   
-  /* .main-slider .prev {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    width: 90px;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0);
-    -webkit-transition: 0.3s;
-            transition: 0.3s;
-    height: 100%;
-  }
-  .main-slider .prev:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-  } */
-  /* .main-slider .prev:hover .arrow-left {
-    opacity: 1;
-  } */
 
   .main-slider .prev,  .main-slider .next{
     position: absolute;
