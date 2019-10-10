@@ -1,0 +1,321 @@
+.fade {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+    a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+
+  
+.body-wrapper {
+  width: 100%;
+  display: -webkit-flex; 
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  --text-hover-color: rgb(55, 130, 159);
+  --text-color: rgb(1, 42, 60);
+  --btn-backgroun-color: rgb(1, 110, 151);
+  
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  color: var(--text-color);
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.5s;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.main-Menu-wrapper{
+  width: 100%;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.menu-wrapper {
+  display: -webkit-flex; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.scrolling {
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: 0.5s;
+  z-index: 2;
+}
+
+
+
+/* Menu Logo */
+.head_logo {
+  width: auto;
+  text-align: left;
+  font-weight: 600;
+  flex: 1;
+  margin: 0 10px;
+
+}
+
+.head_logo>a {
+  cursor: pointer;
+  line-height: 1;
+  font-size: 24px;
+}
+
+/* Menu Links */
+.head_menu {
+  flex: 4;
+  margin: 0 20px;
+}
+
+.head_menu .links {
+  display: -webkit-flex; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.menu-item {
+  padding: 6px 13px;
+  font-weight: 600;
+}
+
+.links .active{
+  background-color: var(--btn-backgroun-color);
+
+}
+
+.links .active a{
+  color: #fff;
+}
+
+.menu-item a {
+  position: relative;
+}
+
+.menu-item a::before {
+  content: '';
+  bottom: 7px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s;
+  transform: scaleX(0);
+}
+
+.menu-item a:hover:before {
+  transform: scaleX(1);
+}
+
+
+/* Menu phone */
+.head_phones {
+  flex: 1;
+  text-align: center;
+  display: -webkit-flex; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.phonenumbers{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.emailnumbers{
+  font-size: 15px;
+  text-align: center;
+  text-transform: lowercase;
+  margin-top: 5px;
+  color: var(--text-hover-color);
+}
+
+.emailnumbers a{
+  color: var(--text-hover-color);
+  font-weight: 400;
+}
+
+.btnnumbers{
+  width: 100%;
+}
+.btnnumbers button{
+  margin-top: 5px;
+  padding: 6px 12px;
+  border: 0px;
+  background-color: var(--btn-backgroun-color);
+  color: #fff;
+  width: 100%;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 1450px) {
+  .phonenumbers{
+    font-size: 20px;
+  }
+
+  .head_menu .links{
+    font-size: 23px;
+  }
+
+
+  .btnnumbers button{
+    font-size: 20px;
+  }
+
+}
+
+@media all and (max-width: 1200px) {
+  .phonenumbers{
+    font-size: 17px;
+    letter-spacing: 0;
+  }
+
+  .emailnumbers{
+font-size: 10px;
+  }
+
+  /* .head_menu .links{
+    font-size: 23px;
+  } */
+
+
+  .btnnumbers button{
+    font-size: 12px;
+  }
+
+}
+
+
+@media all and (max-width: 992px) {
+
+  .head_menu .links, .head_phones{
+    display: none;
+    font-size: 9px;
+  }
+  #menu_btn {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/header/gamburger.png) center center no-repeat;
+    background-size: cover;
+    top: 15px;
+    right: 15px;
+    margin-right: 20px;
+    z-index: 50;
+    transition: 0.5s;
+  }
+
+  #menu_btn:hover {
+    cursor: pointer;
+    background: url(../img/header/gamburgerHover.png) center center no-repeat;
+    background-size: cover;
+  }
+
+  .scrolling {
+    background-color: rgba(1, 42, 61, .4);
+
+  }
+
+
+
+
+
+}
+
+
+@media all and (min-width: 768px) {
+
+
+}
+
+
+
+@media all and (min-width: 576px) {
+
+
+}
+
+@media all and (max-width: 575px) {
+
+
+}

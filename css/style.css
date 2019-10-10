@@ -1,0 +1,225 @@
+.fade {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  body {
+    --text-hover-color: rgb(55, 130, 159);
+    --text-color: rgb(1, 42, 60);
+    --btn-backgroun-color: rgb(1, 110, 151);
+    font-family: 'HelveticaNeueCyr';
+    background-color: #c0c0c0;
+    height: 5000px;
+  }
+
+
+
+
+
+  /* MAIN SLIDER */
+
+  .right_about{
+    width: 100%;
+    margin: 0 auto;
+    }
+
+  .wrap {
+    width: 100%;
+    position: relative;
+  }
+  .wrap .slider-item {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  
+  }
+  .wrap .slider-item .slider-block {
+   text-align: center;
+  }
+  
+  /* .wrap .slider-item .slider-block p{
+    font-size: 1.133em;
+        line-height: 1.85em;
+        max-width: 46em;
+        letter-spacing: -0.35px;
+        margin: 0 auto;
+  } */
+  
+  .wrap .slider-item .slider-block img{
+width: 100%;
+height: auto;
+opacity: 0.6;
+  }
+  
+  /* .wrap .slider-item .slider-block a:hover{
+    color: var(--super-dark-color);
+    transition: 0.5s;
+  } */
+  
+  /* .main-slider .prev {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    width: 90px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition: 0.3s;
+            transition: 0.3s;
+    height: 100%;
+  }
+  .main-slider .prev:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  } */
+  /* .main-slider .prev:hover .arrow-left {
+    opacity: 1;
+  } */
+
+  .main-slider .prev,  .main-slider .next{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+
+  .main-slider .prev .arrow-left {
+    width: 30px;
+    height: 30px;
+    background: url(./../img/body/main-slider/prev.png) center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+    opacity: .7;
+    -webkit-transition: 1s;
+            transition: 1s;
+    cursor: pointer;
+    z-index: 2;
+  }
+  /* .main-slider .next {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    width: 90px;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition: 0.3s;
+            transition: 0.3s;
+    height: 100%;
+    right: 0;
+  } */
+  /* .main-slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .main-slider .next:hover .arrow-right {
+    opacity: 1;
+  } */
+  .main-slider .next .arrow-right {
+    width: 30px;
+    height: 30px;
+    background: url(./../img/body/main-slider/next.png) center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+    opacity: .7;
+    -webkit-transition: 1s;
+            transition: 1s;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .slider-dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  
+          }
+  .slider-dots .dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 10px;
+    background-color: none;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: background-color 0.6s ease;
+            transition: background-color 0.6s ease;
+  }
+  .slider-dots .dot-active {
+    background-color: #fff;
+    height: 10px;
+    width: 10px;
+  }
+
+
+  .scrollup{
+    width: 40px;
+    height: 40px;
+    background-color: var(--text-color);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    color: #fff;
+    transform: rotate(-90deg);
+    cursor: pointer;
+
+  }
+  
+  .scrollup p{
+    width: 40px;
+    display: inline-block;
+    font-size:32px;
+  }
+
+  
+  
+
+  
