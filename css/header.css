@@ -303,14 +303,23 @@ font-size: 10px;
 }
 
 
-@media all and (min-width: 768px) {
+@media all and (max-width: 768px) {
+  .menu-wrapper {
+    
+    height: 50px;
 
+  
+  }
+
+  #menu_btn{
+    top: 0;
+  }
 
 }
 
 
 
-@media all and (min-width: 576px) {
+@media all and (max-width: 576px) {
 
 
 }
