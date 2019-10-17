@@ -262,14 +262,14 @@ height: auto;
       position: relative;
     }
 
-    .main_servise_wrp {
+    .main_service_wrp {
       position: relative;
       display: block;
       width: 100%;
       overflow: hidden;
   }
 
-  .main_servise_wrp img {
+  .main_service_wrp img {
     -webkit-transition: all .6s ease;
     -moz-transition: all .6s ease;
     -o-transition: all .6s ease;
@@ -277,7 +277,7 @@ height: auto;
     width: 100%;
 }
 
-.main_servise_links_list {
+.main_service_links_list {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -315,16 +315,16 @@ height: auto;
   background-color: rgba(1,110,151,.61);
 }
 
-.main_servise_links_list a {
+.main_service_links_list a {
   color: #fff;
 }
 
-.main_servise_wrp:hover .main_servise_links_list {
+.main_service_wrp:hover .main_service_links_list, .main_service_wrp>a {
   padding-top: 44px;
   top: 0;
 }
 
-.main_servise_wrp>a {
+.main_service_wrp>a {
   height: 50px;
     margin-top: -70px;
     padding: 8px 10px;
@@ -344,7 +344,7 @@ height: auto;
   box-sizing: border-box;
 }
 
-.main_servise_wrp>a span {
+.main_service_wrp>a span {
   display: table-cell;
   vertical-align: middle;
   font-size: 100%;
@@ -355,6 +355,132 @@ height: auto;
     font: inherit;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Блок main_expirience */
+
+.second_expirience {
+  display: none;
+}
+
+.main_expirience{
+  display: -webkit-flex; 
+  display: flex;
+  flex-direction: column;
+  margin: 90px 0 60px 0;
+}
+
+.main_expirience hr, .second_expirience hr{
+  margin-bottom:40px;
+  margin-top:40px;
+  display: block;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    border-top-color: rgba(238,238,238,1);
+    border-top-width: 1px;
+    border-top-style: solid;
+    width: 80%;
+}
+
+.main_expirience .title-expirience, .second_expirience .title-expirience{
+  width: 100%;
+  text-align: center;
+  max-width: 80%;
+  margin: 0px auto 20px auto;
+
+}
+
+
+.main_expirience .title-expirience h2 , .second_expirience .title-expirience h2{
+  font-size: 34px;
+  line-height: 1;
+ margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-weight: 600;
+ 
+}
+.main_expirience .expirience-content {
+  display: -webkit-flex; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.second_expirience .expirience-content{
+  display: -webkit-flex; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 20px 0 20px;
+}
+
+.expirience-content .expirience-column{
+  display: -webkit-flex; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  flex: 1;
+}
+
+.expirience-content .exp-photo{
+  min-width: 90%;
+}
+.expirience-content .exp-photo img{
+  width: 100%; 
+  border-radius: 15%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.second_expirience .expirience-content a{
+  margin: 0 auto;
+}
+
+.expirience-content .exp-article {
+  display: -webkit-flex; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+
+.expirience-content .exp-article img{
+width: 40px;
+margin: 16px 16px;
+}
+
+.expirience-content .exp-article p{
+  font-style: italic;
+  font-size: 18px;
+  text-align: justify;
+}
 
 
 
@@ -393,7 +519,7 @@ height: auto;
 }
 
 
-.main_servise_wrp>a {
+.main_service_wrp>a {
   margin-top: -80px;
   font-size: 22px;
 padding: 10px 0;
@@ -419,7 +545,7 @@ padding: 10px 0;
 
 }
 
-  .main_servise_wrp:hover .main_servise_links_list {
+  .main_service_wrp:hover .main_service_links_list {
     padding-top: 34px;
   }
 
@@ -435,7 +561,7 @@ padding: 10px 0;
   }
   
   
-  .main_servise_wrp>a {
+  .main_service_wrp>a {
     margin-top: -80px;
     font-size: 22px;
   padding: 10px 0;
@@ -453,8 +579,32 @@ padding: 10px 0;
     }
   
     
-  .main_servise_wrp>a {
+  .main_service_wrp>a {
     vertical-align: middle;
+  }
+
+
+
+
+
+  .main_expirience{
+    padding: 70px 0 30px 0;
+    margin: 0px;
+  }
+  
+  .main_expirience .title-expirience{
+    margin: 0px auto 10px auto;
+  }
+  
+  .main_expirience {
+    display: none;
+  }
+  
+  .second_expirience {
+    display: -webkit-flex; 
+    display: flex;
+    flex-direction: column;
+    margin: 90px 0 60px 0;
   }
   
 
