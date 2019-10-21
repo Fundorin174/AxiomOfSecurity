@@ -137,6 +137,35 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
+// OWL Carusel main_projects
+
+$(document).ready(function(){
+    $("#caruselMainProjects").owlCarousel({
+        loop: true,
+        dots: true,
+        responsive:{
+            0:{
+                items:1,
+                dots: true,
+                autoWidth: true
+            },
+            600:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            1100:{
+                items:4
+            }
+        }
+    });
+  });
+
+
+
+
+
 
 
 

@@ -500,6 +500,133 @@ margin: 16px 16px;
 
 
 
+/* Блок main_projects */
+
+.main_projects{
+  background: url(./../img/body/main_projects/main_project_bg.jpg) 100% 100%/cover no-repeat;
+}
+
+.main_ttl{
+  padding-top: 35px;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #012a3d;
+}
+
+.project_list_wrp{
+  opacity: 1;
+  margin: 30px auto 0;
+  max-width: 1200px;
+  display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    
+}
+.owl-carousel.owl-loaded {
+  display: block;
+}
+
+.owl-carousel{
+  display: none;
+  width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.owl_item{
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0 auto;
+}
+
+.owl_carusel_item{
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 0 7px;
+}
+
+
+.project_wrp{
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+
+.owl-carousel .owl-item img {
+  transform-style: preserve-3d;
+  display: block;
+    width: 100%;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+
+.project_wrp .ttl {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  min-height: 80px;
+  padding: 16px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  background-color: #00283c;
+  z-index: 2;
+  -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  transition: all .6s ease;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
