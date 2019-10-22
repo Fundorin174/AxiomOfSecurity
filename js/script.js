@@ -167,6 +167,10 @@ $(document).ready(function(){
 
 
 
+//   lightbox-sertificates
+
+
+
 
 
 
