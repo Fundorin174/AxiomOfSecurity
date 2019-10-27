@@ -160,6 +160,13 @@ $(document).ready(function(){
             }
         }
     });
+    //Привязываем свои кнопки к owl-carusel
+	$(".arrow-right").click(function(){
+		$("#caruselMainProjects").trigger("next.owl.carousel");
+	});
+	$(".arrow-left").click(function(){
+		$("#caruselMainProjects").trigger("prev.owl.carousel");
+	});
   });
 
 

@@ -52,7 +52,7 @@ header {
   font-family: 'HelveticaNeueCyr', sans-serif;
   color: var(--text-color);
   text-transform: uppercase;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
   transition: 0.5s;
   z-index: 2;
   position: fixed;
@@ -147,8 +147,8 @@ header {
   transform: scaleX(0);
 }
 
-.menu-item a:hover:before {
-  transform: scaleX(1);
+.menu-item a:hover {
+  color: var(--text-hover-color);
 }
 
 
