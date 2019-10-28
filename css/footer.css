@@ -149,7 +149,7 @@ h4{
       height: 4px;
       position: relative;
       left: -12px;
-      top: 15px;
+      top: 11px;
       border-radius: 50%;
       background-color: #4285f4;
  }
@@ -204,30 +204,6 @@ h4{
 
 .small_foot p{
   display: inline-block;
-}
-
-.scrollup{
-  width: 40px;
-  height: 40px;
-  background-color: #4285f4;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  text-align: center;
-  color: #fff;
-  transform: rotate(-90deg);
-  cursor: pointer;
-
-}
-
-.scrollup p{
-  margin-top: -14px; 
-   font-size: 40px;
-}
-
-.scrollup:hover{
-  background-color: #062a5e;
-  transition: 0.5s;
 }
 
 

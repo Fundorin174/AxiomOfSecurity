@@ -139,7 +139,7 @@ window.addEventListener('DOMContentLoaded', function () {
 // OWL Carusel main_projects
 
 $(document).ready(function(){
-    $("#caruselMainProjects").owlCarousel({
+    $("#caruselSecondProjects").owlCarousel({
         loop: true,
         dots: true,
         responsive:{
@@ -161,10 +161,10 @@ $(document).ready(function(){
     });
     //Привязываем свои кнопки к owl-carusel
 	$(".project-arrow-right").click(function(){
-		$("#caruselMainProjects").trigger("next.owl.carousel");
+        $("#caruselSecondProjects").trigger("next.owl.carousel");
 	});
 	$(".project-arrow-left").click(function(){
-		$("#caruselMainProjects").trigger("prev.owl.carousel");
+        $("#caruselSecondProjects").trigger("prev.owl.carousel");
 	});
   });
 
