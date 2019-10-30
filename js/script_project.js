@@ -53,84 +53,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
-    //main slider
-
-    let slideIndex = 1,
-        sliders = document.querySelectorAll('.slider-item'),
-        prev = document.querySelector('.arrow-left'),
-        next = document.querySelector('.arrow-right'),
-        dots = document.querySelectorAll('.dot'),
-        dotWrap = document.querySelector('.slider-dots');
-
-
-
-
-
-    function showSlide(n) { //показ слайда, прячет остальные, меняет цвет активной точки, закольцовывает показ по кругу
-
-        if (n > sliders.length) {
-            slideIndex = 1;
-        }
-        if (n < 1) {
-            slideIndex = sliders.length;
-        }
-        sliders.forEach((item) => item.style.display = 'none');
-
-        dots.forEach((item) => item.classList.remove('dot-active'));
-        sliders[slideIndex - 1].style.display = 'block';
-
-        dots[slideIndex - 1].classList.add('dot-active');
-    }
-
-    function changeSlide(n) {
-        showSlide(slideIndex += n); // Переход к следующему
-    }
-
-    function currentSlide(n) {
-        showSlide(slideIndex = n); //Показ нужного слайда
-    }
-
-    prev.addEventListener('click', () => changeSlide(-1));
-    next.addEventListener('click', () => changeSlide(1));
-
-    showSlide(slideIndex);
-
-
-
-
-    dotWrap.addEventListener('click', (e) => {
-        for (let i = 0; i < sliders.length + 1; i++) {
-            if (e.target.classList.contains('dot') && e.target == dots[i - 1]) {
-                currentSlide(i); //Переход при нажатии на точки
-            }
-        }
-    });
-
-
-    // Автоматическое листание слайдов пока они видимы
-    function autoslideChange() {
-        let timerId = setTimeout(autoslideChange,7000);
-        changeSlide(1);
-        if ($(window).scrollTop() > $("div.slider-block").height()) {
-            clearTimeout(timerId);
-        }
-    }
-
-    window.addEventListener('load', () => {
-        if ($(window).scrollTop() < $("div.slider-block").height()) {
-            autoslideChange();
-        } 
-    });
-
-
-    // Возобновление автоматической прокрутки слайдов при подъеме страницы наверх
-    window.addEventListener('scroll', () => {
-        if ($(window).scrollTop() == 0) {
-            setTimeout(autoslideChange, 1000);
-        } 
-    });
-
-
+    
 
 
 
@@ -173,7 +96,134 @@ $(document).ready(function(){
 
 
 
-//   lightbox-sertificates
+// Модуль показывающий табы. В CSS необходимы классы 'show' и 'hide', меняющие параметр: display. В аргументы помещаются название классов пунктов меню, родительского блока меню и самих табов.
+let tabContentFromMenu = function(infoHeaderTab, infoHeader, infoTabContent){
+
+    let info = document.querySelector('.' + infoHeader),
+        tab = document.querySelectorAll('.'+ infoHeaderTab),
+        article = document.querySelector('.main_project_wrap_article'),
+        tabContent = document.querySelectorAll('.' + infoTabContent);
+
+    //фуекция скрывающая контент, начиная с блока (а)
+        function hideTabContent(a){
+          
+          for (let i = a; i < tabContent.length; i++){
+            tabContent[i].classList.remove('show');
+            tabContent[i].classList.add('hide');
+          }
+        };
+    
+        hideTabContent (1);
+    //функция показывающая контент блока (b)
+        function showTabContent(b){
+          if (tabContent[b].classList.contains('hide')){
+            tabContent[b].classList.remove('hide');
+            tabContent[b].classList.add('show');
+          };
+        };
+    
+        //Обработчик по клику скрывает все блоки и показывает тот на картинку которого которого кликнули
+        
+
+        info.addEventListener('click', function (e) {
+                    let target = e.target;
+                    article.classList.add('hide');//скрыть абзац
+                    tab = document.querySelectorAll('.' + infoHeaderTab);
+                    if (target.tagName == 'IMG' || target.tagName == 'SPAN') {
+
+                        for (let i = 0; i < tab.length; i++) {
+                            let images = [],
+                                spans = [];
+                            images[i] = tab[i].querySelector('img');
+                            spans[i] = tab[i].querySelector('span');
+                            if (images[i] == target || spans[i] == target) {
+                                hideTabContent(0);
+                                if (i >= 0 && i < 6) {
+                                    showTabContent(i + 6);
+
+                                } else if (i >= 6 && i < 18) {
+
+                                    showTabContent(i - 6);
+                                } else {
+
+                                    showTabContent(i - 18);
+                                }
+
+                                break;
+                            };
+                        }
+
+
+
+
+                    };
+
+
+  
+
+})
+
+
+
+
+
+
+
+
+
+
+    };
+  
+
+  
+  
+  //Вызывает модуль с указанием селекторов
+   tabContentFromMenu('info-header-tab', 'info-header', 'info-tab-content');
+
+
+
+
+
+
+
+   //   OffCanvas-Menu
+
+
+
+$('#menu_btn').click(function () {
+    $('#offcanvas-menu').slideToggle("600");
+  });
+  
+  // ЗАкрытие бокового мобильног меню при нажатии на крестик
+  $('#offcanvasClose').click(function () {
+    $('#offcanvas-menu').slideToggle("600");
+  });
+  
+  
+  
+  
+  // ЗАкрытие бокового мобильног меню при нажатии на ссылку
+  let offcanvasMenuList = document.querySelector('.nav-menu'),
+  offcanvasMenu = document.querySelector('#offcanvas-menu');
+  offcanvasMenuList.addEventListener('click', (e) => {
+    let target = e.target;
+    if (target && target.classList.contains('menu-itema')) {
+      offcanvasMenu.style.display = 'none';
+       
+    }
+  });
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -56,7 +56,6 @@ html{
     --btn-backgroun-color: rgb(1, 110, 151);
     font-family: 'HelveticaNeueCyr';
     background-color: #fff;
-    height: 5000px;
     direction: ltr;
   }
 
@@ -525,6 +524,11 @@ margin: 16px 16px;
   text-transform: uppercase;
   text-align: center;
   color: #012a3d;
+}
+
+.main_partners .main_ttl{
+  padding-top: 90px;
+
 }
 
 .project_list_wrp{

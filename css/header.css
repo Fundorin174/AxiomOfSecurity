@@ -208,6 +208,81 @@ header {
 
 
 
+  /* offcanvas-menu */
+  .offcanvas-menu{
+    display: none;
+    /* visibility: visible; */
+    z-index: 9999;
+    right: 0;
+    transform: translateX(0);
+    width: 100%;
+    /* min-width: 200px;
+    max-width: 320px; */
+    /* height: 25%; */
+    min-height: auto;
+    max-height: 100vh;
+    background-color: #fff;
+    color: rgb(1, 42, 60);;
+    position: fixed;
+    top: 0;
+    overflow: inherit;
+    transition: 0.5s;
+  }
+  
+  
+  .offcanvas-menu .popup-close{
+    position: absolute;
+        right: 20px;
+        top: 10px;
+        cursor: pointer;
+        font-size: 35px;
+        color: rgb(1, 42, 60);;
+        font-weight: 300;
+        z-index: 10;
+  }
+  
+  .sp-module{
+    margin-top: 0;
+    padding: 30px;
+  
+  }
+  
+  .sp-module-content ul{
+    list-style: none;
+        padding: 0;
+        margin: 0;
+  
+  }
+  
+  .sp-module-content ul li{
+    border: 0;
+      position: relative;
+      overflow: hidden;
+      display: block;
+      margin: 25px 0;
+  }
+  
+  .sp-module-content ul li a{
+    transition: 300ms;
+    padding:10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(1, 42, 60);;
+    font-weight: 500;
+    line-height: 28px;
+  }
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
 
 
 
