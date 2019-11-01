@@ -122,14 +122,7 @@ header {
   font-weight: 600;
 }
 
-.links .active{
-  background-color: var(--btn-backgroun-color);
 
-}
-
-.links .active a{
-  color: #fff;
-}
 
 .menu-item a {
   position: relative;
@@ -199,6 +192,7 @@ header {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 400;
+  cursor: pointer;
 }
 
 
@@ -274,8 +268,15 @@ header {
   
   
   
+  header .active{
+    background-color: var(--btn-backgroun-color);
+    color: #fff !important;
+  }
   
-  
+
+  header .active a{
+    color: #fff !important;
+  }
   
 
 

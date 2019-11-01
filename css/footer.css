@@ -161,23 +161,6 @@ h4{
     margin-bottom: 15px;
   }
 
-  #footer-button{
-    height: 30px;
-
-    border-radius: 10px;
-    width: auto;
-    background-color: #4285f4;
-    color: #fff;
-    padding: 0 10px 0 10px;
-    }
-
-
-  #footer-button:hover {
-    background-color: #4285f4;
-    color: #fff;
-    background-color: #062a5e;
-    transition: 0.5s;
-  }
 
 
 /* Нижний футер */

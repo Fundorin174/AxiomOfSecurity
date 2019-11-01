@@ -216,6 +216,33 @@ $('#menu_btn').click(function () {
 
 
 
+//   PopupMenu
+
+
+let overlay = document.querySelector('.overlay'),
+close = document.querySelector('.mfp-close');
+
+
+
+// Открыть Модальное при нажатии на любую кнопку
+let info = document.querySelector('.body-wrapper');
+
+info.addEventListener('click', (e) => {
+  let target = e.target;
+  if (target && target.classList.contains('form-btn')) {
+    overlay.style.display = 'block';
+    document.body.style.overflow = 'hidden'; //запрет проктутки при открытом модальном окне
+  }
+});
+
+
+// Закрыть модальное окно, разблокировать прокрутку
+close.addEventListener('click', () => {
+overlay.style.display = 'none';
+document.body.style.overflow = '';
+});
+
+
 
 
 

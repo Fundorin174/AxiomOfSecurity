@@ -1,3 +1,4 @@
+
 .additional_services .hide {
     display: none;
 }
@@ -36,7 +37,7 @@
 }
 
 .tabs_link {
-    padding: 9px 14px 9px 36px;
+    padding: 9px 36px;
     position: relative;
     background-color: transparent;
     text-transform: uppercase;
@@ -115,6 +116,15 @@
 }
 
 
+.active{
+    background-color: var(--btn-backgroun-color);
+     color: #fff !important;
+     }
+  
+
+
+
+
 /* @media all and (max-width: 1300px){
 
 } */
@@ -130,7 +140,7 @@
     }
 
     .tabs_link {
-        padding: 5px 14px 9px 24px;
+        padding: 7px 24px;
         font-size: 16px;
     }
 

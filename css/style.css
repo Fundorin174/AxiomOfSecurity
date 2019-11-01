@@ -43,6 +43,10 @@ a {
   color: #016e97;
 }
 
+
+
+
+
 html {
 
   -moz-box-sizing: border-box;
@@ -799,6 +803,7 @@ ul {
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
+  cursor: pointer;
 }
 
 
@@ -855,6 +860,46 @@ ul {
 
 
 
+
+/* Thanks you.html */
+
+
+.thanks-container{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./../img/thank-you.png) center center no-repeat;
+  background-size: cover;
+  /* padding: 35px 88px 50px 88px; */
+  color: var(--text-color);
+  text-align: center;
+ }
+
+ .thanks-container h1{
+   margin: 5% 20% 0 20%;
+
+ }
+
+
+ .thanks-container .more-btn{
+  position: fixed;
+  top: 90%;
+  right: 5%;
+  width: 100%;
+  max-width: 190px;
+  margin: 20px auto;
+  padding: 6px 12px;
+  border: 0px;
+  background-color: var(--btn-backgroun-color);
+  color: #fff;
+  width: 100%;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  
+}
 
 
 

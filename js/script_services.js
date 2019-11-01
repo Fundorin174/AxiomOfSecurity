@@ -72,6 +72,7 @@ let tabContentFromMenu = function(infoHeaderTab, infoHeader, infoTabContent){
     for (let i = a; i < tabContent.length; i++) {
       tabContent[i].classList.remove('show');
       name[i].classList.remove('show');
+      tab[i].classList.remove('active');
       tabContent[i].classList.add('hide');
       name[i].classList.add('hide');
     }
@@ -83,10 +84,12 @@ let tabContentFromMenu = function(infoHeaderTab, infoHeader, infoTabContent){
     if (tabContent[b].classList.contains('hide')) {
       tabContent[b].classList.remove('hide');
       tabContent[b].classList.add('show');
+      tab[b].classList.add('active');
     }
     if (name[b].classList.contains('hide')) {
         name[b].classList.remove('hide');
         name[b].classList.add('show');
+        tab[b].classList.add('active');
       }
   }
 
@@ -150,6 +153,33 @@ $('#menu_btn').click(function () {
   });
 
 
+
+
+//   PopupMenu
+
+
+let overlay = document.querySelector('.overlay'),
+close = document.querySelector('.mfp-close');
+
+
+
+// Открыть Модальное при нажатии на любую кнопку
+let info = document.querySelector('.body-wrapper');
+
+info.addEventListener('click', (e) => {
+  let target = e.target;
+  if (target && target.classList.contains('form-btn')) {
+    overlay.style.display = 'block';
+    document.body.style.overflow = 'hidden'; //запрет проктутки при открытом модальном окне
+  }
+});
+
+
+// Закрыть модальное окно, разблокировать прокрутку
+close.addEventListener('click', () => {
+overlay.style.display = 'none';
+document.body.style.overflow = '';
+});
 
 
 
