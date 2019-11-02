@@ -7,6 +7,12 @@
     display: block;
 }
 
+.main-services {
+
+    margin: 90px auto;
+  
+  }
+  
 
 .ttl_h1 {
     width: 100%;
@@ -70,7 +76,7 @@
 .info-tabcontent__text {
     font-size: 18px;
     padding: 10px 10px;
-    font-size: 100%;
+
 }
 
 .info-tabcontent__text h1 {
@@ -110,7 +116,7 @@
     height: 6px;
     position: relative;
     left: -12px;
-    top: 12px;
+    top: 14px;
     border-radius: 50%;
     background-color: #4285f4;
 }
@@ -121,9 +127,27 @@
      color: #fff !important;
      }
   
+.cnt tr:nth-child(2n+1) td, tr:nth-child(2n+1) td {
+        background-color: #f7f7f7;
 
+    }
 
+.cnt td,  td {
+        padding: 6px;
+    }
 
+    tr {
+        display: table-row;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
 
 /* @media all and (max-width: 1300px){
 
@@ -187,6 +211,12 @@
         font-size: 12px;
     }
 
+
+    .info-tabcontent__text li:before{
+        top: 10px;
+        width: 4px;
+        height: 4px;
+    }
     .info-tabcontent__text h3 {
         font-size: 18px;
     }

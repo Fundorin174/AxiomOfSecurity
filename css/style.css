@@ -903,6 +903,16 @@ ul {
 
 
 
+.nav-menu .active{
+  background-color: var(--btn-backgroun-color);
+  color: #fff !important;
+}
+
+
+.nav-menu .active a{
+  color: #fff !important;
+}
+
 
 
 
