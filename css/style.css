@@ -1,6 +1,15 @@
 .fade {
   -webkit-animation-name: fade;
   animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+}
+
+.fade3-5 {
+  -webkit-animation-name: fade;
+  animation-name: fade;
   -webkit-animation-duration: 3.5s;
   animation-duration: 3.5s;
   -webkit-animation-name: fade;
